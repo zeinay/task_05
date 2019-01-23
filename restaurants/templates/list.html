@@ -8,7 +8,18 @@
         {% for restaurant in restaurants %}
             <a href="#">
                 <ul>
-                    <li></li>
+                    <li> 
+                        <a href="restaurants/detail/{{restaurant.id}}"><h1>{{restaurant.name}}</h1> </a>
+                    </li>
+                    <li> 
+                        <h1>{{restaurant.description}}</h1>
+                    </li>
+                    <li>
+                        <h1> {{restaurant.opening_time}}</h1>
+                    </li>
+                    <li>
+                        <h1>{{restaurant.closing_time}} </h1>
+                    </li>
                 </ul>
             </a>
         {% endfor %}
